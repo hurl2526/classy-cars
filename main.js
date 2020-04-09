@@ -13,10 +13,7 @@ class Vehicle {
 
 class Car extends Vehicle{
   constructor(name,value){
-    super()
-    this.name = name
-    this.wheelCount = 4
-    this.maxSpeed = value
+    super(name,4,value)
   }
   drive(){
     return "Vroom. "
@@ -25,9 +22,7 @@ class Car extends Vehicle{
 
 class Ferrari extends Car {
   constructor(){
-    super()
-    this.name = 'Ferrari'
-    this.maxSpeed = 180
+    super('Ferrari', 180)
   }
   drive(){
     return super.drive() + 'I\'m a Ferrari!'
